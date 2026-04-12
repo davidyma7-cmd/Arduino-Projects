@@ -1,0 +1,2 @@
+1. I noticed that as the user gets far from the sensor, it require more time for the sensor to detect and tell the MCU. Maybe the user can add the code that achieves the function where the 2s delay is directly proportional to 1/distance.
+2. Power consumption may be high if the function is always running, the user can add code that turns the MCU off if detecting no object in 1 meter of the sensor. Then, as the user trigger the rising edge again, the MCU starts again.
