@@ -1,3 +1,4 @@
 Some of the problems are:
 1. Adding current limiting resistor for the ultrasonic sensor. It lowers the VCC and make the module not working. It made VCC from 5V to around 4V. At first I thought it was the diode. Then, I removed the diode. However, it does not work still. Then, I searched up and found that adding the R is not appropriate.
 2. According to the datasheet I look at it says that the ultrasonic sensor need VCC from the MCU. Then, I connect to a GPIO. However, the MCU's ability to operate loads is weak, so I just connect it to regular VCC. It also minimizes hardeware and software complexity.
+Another thing is that the RC is too long and it even made me thought the thing is broken.
